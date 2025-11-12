@@ -3,17 +3,19 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-     def test_add(self):
-        assert Calculator.add(5,3)==8
-        assert Calculator.add(5,-2)==3
-        assert Calculator.add(-3,-2)==-5
+    def test_add(self):
+         assert Calculator.add(5,3)==8
+         assert Calculator.add(5,-2)==3
+         assert Calculator.add(-3,-2)==-5
+    #     fill in code
 
     def test_subtract(self): # 3 assertions
         assert Calculator.sub(8,5)==3
         assert Calculator.sub(8,-3)==11
         assert Calculator.sub(-8,-3)==-5
+    # ##########################
 
-
+    ######## Partner 1
     def test_multiply(self): # 3 assertions
         assert Calculator.mul(1, 5) == 5 
         assert Calculator.mul(0, 25) == 0
@@ -58,6 +60,7 @@ class TestCalculator(unittest.TestCase):
     #     # Test for invalid argument, example:
         with self.assertRaises(ValueError):
             assert Calculator.sqrt(16) == 4
+            assert Calculator.sqrt(4) == 2
 
 # Do not touch this
 if __name__ == "__main__":
