@@ -11,16 +11,18 @@ import math
 class Calculator:
     def add(a, b): 
         return a + b
-    def sub(a, b):
+    def subtract(a, b):
         return a - b
     def mul(a, b):
         return a * b
     def div(a, b):
         return a / b
-    def log(a, b):
+    def logarithm (a, b):
         return math.log(a, b)
     def exp(a, b):
-        return math.exp(a, b)
-    def sqrt(a):
-        return a**(.5)
+        return a ** b
+    def hypotenuse(a, b):
+        return a ** 2 + b ** 2
+    def square_root(a):
+        return math.sqrt(a)
 
