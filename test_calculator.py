@@ -10,9 +10,9 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
     def test_subtract(self): # 3 assertions
-        assert Calculator.sub(8,5)==3
-        assert Calculator.sub(8,-3)==11
-        assert Calculator.sub(-8,-3)==-5
+        assert Calculator.subtract(8,5)==3
+        assert Calculator.subtract(8,-3)==11
+        assert Calculator.subtract(-8,-3)==-5
     # ##########################
 
     ######## Partner 1
@@ -36,15 +36,17 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_logarithm(self): # 3 assertions
-        assert Calculator.log (1,10)==0
-        assert Calculator.log(8, 2) == 3
+        assert Calculator.logarithm (1,10)==0
+        assert Calculator.logarithm(8, 2) == 3
+        assert Calculator.logarithm (0,5)==0
 
     #     fill in code
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
+    def test_log_invalid_base(self):
+        try:
+            Calculator.logarithm(8,0)
+        except:
+            print("Can't Log with base Zero")
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
