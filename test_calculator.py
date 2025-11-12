@@ -54,7 +54,7 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            Calculator.logrithm(0, 5)
+            Calculator.logarithm(0, 5)
 
     # def test_hypotenuse(self): # 3 assertions
         assert Calculator.hypotenuse(3, 4) == 5 ** 2
@@ -64,9 +64,9 @@ class TestCalculator(unittest.TestCase):
     def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
         with self.assertRaises(ValueError):
-            assert Calculator.sqrt(16) == 4
-            assert Calculator.sqrt(4) == 2
-            assert Calculator.sqrt(25) == 5
+            assert Calculator.square_root(16) == 4
+            assert Calculator.square_root(4) == 2
+            assert Calculator.square_root(25) == 5
 
 # Do not touch this
 if __name__ == "__main__":
