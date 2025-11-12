@@ -3,7 +3,7 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-     def test_add(self):
+    def test_add(self):
          assert Calculator.add(5,3)==8
          assert Calculator.add(5,-2)==3
          assert Calculator.add(-3,-2)==-5
@@ -60,6 +60,7 @@ class TestCalculator(unittest.TestCase):
     #     # Test for invalid argument, example:
         with self.assertRaises(ValueError):
             assert Calculator.sqrt(16) == 4
+            assert Calculator.sqrt(4) == 2
 
 # Do not touch this
 if __name__ == "__main__":
