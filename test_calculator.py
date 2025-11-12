@@ -32,7 +32,10 @@ class TestCalculator(unittest.TestCase):
             print("Can't Divide by Zero")
 
 
-    # def test_logarithm(self): # 3 assertions
+    def test_logarithm(self): # 3 assertions
+        assert Calculator.log (1,10)==0
+        assert Calculator.log(8, 2) == 3
+
     #     fill in code
 
     # def test_log_invalid_base(self): # 1 assertion
