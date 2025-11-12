@@ -1,3 +1,6 @@
+#https://github.com/Bean-Hunter24-7/lab11-LA-WS
+#Partner 1: Lucca Aguiar
+#Partner 2: William Stephenson
 """
 calculator.py
 - Defines functions used to create a simple calculator
