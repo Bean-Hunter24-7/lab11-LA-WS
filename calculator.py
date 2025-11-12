@@ -21,6 +21,6 @@ class Calculator:
         return math.log(a, b)
     def exp(a, b):
         return math.exp(a, b)
-
-
+    def sqrt(a):
+        return a**(.5)
 
