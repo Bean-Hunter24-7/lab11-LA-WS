@@ -61,6 +61,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             assert Calculator.sqrt(16) == 4
             assert Calculator.sqrt(4) == 2
+            assert Calculator.sqrt(25) == 2
 
 # Do not touch this
 if __name__ == "__main__":
