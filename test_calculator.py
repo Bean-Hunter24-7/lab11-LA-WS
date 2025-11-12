@@ -3,7 +3,10 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
+     def test_add(self):
+         assert calculator.add(5,3)==8
+         assert calculator.add(5,-2)==3
+         assert calculator.add(-3,-2)==-5
     #     fill in code
 
     # def test_subtract(self): # 3 assertions
